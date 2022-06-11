@@ -36,7 +36,7 @@
     --font-medium: 500;
     ---font-semi-bold: 600;
 
-    /*======= MARGENES BOTTOM ======*/
+    /*======= MARGINS BOTTOM ======*/
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
     --mb-0-75: .75rem;
@@ -70,12 +70,108 @@
 /*======= BUTTON DARK/LIGHT =======*/
 
 /*======= BASE =======*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,h2,h3,h4{
+    color: var(--tittle-color);
+    font-weight: var(---font-semi-bold);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
 
 /*======= REUSABLE CSS CLASSES =======*/
+.section{
+    padding: 2rem 0 4rem;
+}
+
+.section_title{
+    font-size: var(--h1-font-size);
+}
+
+.section_subtitle{
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+.section_title,
+.section_subtitle{
+    text-align: center;
+}
 
 /*======= LAYOUT =======*/
 
+.container{
+    max-width: 768;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.header{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+
 /*======= NAV =======*/
+.nav{
+    max-width: 968px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo,
+.nav_toggle{
+    color: var(--tittle-color);
+    font-weight: var(--font-medium);
+}
 
 /*======= SHOW MENU =======*/
+
+/*====== ACTIVE LINK ======*/
+
+/*====== CHANGE BACKGROUND HEADER ======*/
+
+/*====== HOME ======*/
+
+/*====== BUTTONS ======*/
+
+/*====== ABOUT ======*/
     
