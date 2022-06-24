@@ -32,9 +32,8 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 /*====== SKILLS SELECTION ======*/
 const skillsContent = document.getElementsByClassName('skills_content'),
       skillsHeader = document.querySelectorAll('.skills_header')
-
 function toggleSkills(){
-    let itemClass = this.parentNode.getElementsByClassName
+    let itemClass = this.parentNode.className
 
     for(i = 0; i < skillsContent.length; i++){
         skillsContent[i].className = 'skills_content skills_close'
@@ -43,10 +42,62 @@ function toggleSkills(){
         this.parentNode.className = 'skills_content skills_open'
     }
 }
-
 skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
 })
-/*====== QUALIFICATION TABS ======*/
 
-/*====== SERVICES MODULE ======*/
+/*====== RESUME ======*/
+const tabs = document.querySelectorAll('[data-target]'),
+      tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab =>{
+    tab.addEventListener('click', () =>{
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContent =>{
+            tabContent.classList.remove('resume_active')
+        })
+        target.classList.add('resume_active')
+
+        tabs.forEach(tab =>{
+            tab.classList.remove('resume_active')
+        })
+        tab.classList.add('resume_active')
+    })
+})
+
+
+/*====== SERVICES MODAL ======*/
+const modalViews = document.querySelectorAll('.services_modal'),
+      modalBtns = document.querySelectorAll('.services_button'),
+      modalCloses = document.querySelectorAll('.services_modal-close')
+
+let modal = function(modalClick){
+    modalViews[modalClick].classList.add('active-modal')
+}
+
+modalBtns.forEach((modalBtns, i) => {
+    modalBtns.addEventListener('click', () =>{
+        modal(i)
+    })
+})
+
+modalCloses.forEach((modalCloses) => {
+    modalCloses.addEventListener('click', () =>{
+        modalViews.forEach((modalView) =>{
+            modalView.classList.remove('active-modal')
+        })
+    })
+})
+
+/*====== PORTFOLIO SWIPER ======*/
+
+/*====== TESTIMONIAL ======*/
+
+/*====== SCROLL SECTIONS ACTIVE LINK ======*/
+
+/*====== CHANGE BACKGROUND HEADER ======*/
+
+/*====== SHOW SCROLL TOP ======*/
+
+/*====== DARK LIGHT THEME ======*/
