@@ -105,8 +105,6 @@ let swiper = new Swiper(".portfolio_container", {
     },
 });
 
-/*====== TESTIMONIAL ======*/
-
 /*====== SCROLL SECTIONS ACTIVE LINK ======*/
 
 /*====== CHANGE BACKGROUND HEADER ======*/
