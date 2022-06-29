@@ -29,7 +29,7 @@
           <div class="nav_menu" id="nav-menu">
             <ul class="nav_list grid">
                 <li class="nav_item">
-                    <a href="#home" class="nav_link">
+                    <a href="#home" class="nav_link active-link">
                         <i class="uil uil-estate nav_icon"></i> Home
                     </a>
                 </li>
@@ -63,6 +63,9 @@
           </div>
 
           <div class="nav_btns">
+            <!--Theme change button -->
+            <i class="uil uil-moon change-theme" id="theme-button"></i>
+
             <div class="nav_toggle" id="nav-toggle">
                 <i class="uil uil-apps"></i>
             </div>
@@ -620,7 +623,7 @@
         </section>
 
         <!--====== CONTACT ME ======-->
-        <section class="contact section" id="contact">
+        <section class="contact section" id="contactme">
             <h2 class="section_title">Contact Me</h2>
             <span class="section_subtitle">Get in touch</span>
             <div class="contact_container container grid">
@@ -693,35 +696,40 @@
                 </div>
                 <ul class="footer_links">
                     <li>
-                        <a href="#services" class="footer_link">Services</a>
+                        <a href="#services" class="footer_links">Services</a>
                     </li>
                     <li>
-                        <a href="#portfolio" class="footer_link">Portfolio</a>
+                        <a href="#portfolio" class="footer_links">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#contact" class="footer_link">Contactme</a>
+                        <a href="#contact" class="footer_links">Contactme</a>
                     </li>
                 </ul>
-                <div class="footer_socials">
-                    <a href="" class="footer_social">
-                        
+                <div class="footer_social">
+                    <a href="https://www.linkedin.com/in/alex-m-kimeu/" target="_blank" class="footer_social">
+                        <i class="uil uil-linkedin"></i>
                     </a>
-
-                    <a href="" class="footer_social">
-                        
+                    
+                    <a href="https://github.com/alex-m-kimeu" target="_blank" class="footer_social">
+                        <i class="uil uil-github"></i>
                     </a>
-
-                    <a href="" class="footer_social">
-                        
-                    </a>
+                    
+                    <a href="https://discord.com/" target="_blank" class="footer_social">
+                        <i class="uil uil-discord"></i>
+                    </a> 
                 </div>
             </div>
+            <p class="footer_copy">&#169:
+                Alexkim. All right reserved
+            </p>
         </div>
     </footer>
 
 
     <!--====== SCROLL TOP ======-->
-
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup_icon"></i>
+    </a>
 
     <!--====== SWIPER JS ======-->
     <script src="assets/js/swiper-bundle.min.js"></script>
