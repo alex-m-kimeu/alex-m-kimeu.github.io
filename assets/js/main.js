@@ -90,20 +90,24 @@ modalCloses.forEach((modalCloses) => {
     })
 })
 
-/*====== PORTFOLIO SWIPER ======*/
-let swiper = new Swiper(".portfolio_container", {
-    cssMode: true,
-    loop: true,
-
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+/*====== MIXITUP FILTER PORTFOLIO  ====== */
+let mixerPortfolio = mixitup('.portfolio_container', {
+    selectors: {
+        target: '.portfolio_card'
     },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+    animation: {
+        duration: 300
+    }
 });
+
+/* Link active portfolio */
+const linkPortfolio = document.querySelectorAll('.portfolio_item')
+
+function activeWork(){
+     linkPortfolio.forEach(l=> l.classList.remove('active_portfolio'))
+     this.classList.add('active_portfolio')
+}
+linkPortfolio.forEach(l=> l.addEventListener('click', activeWork))
 
 /*====== SCROLL SECTIONS ACTIVE LINK ======*/
 const sections = document.querySelectorAll('section[id]')
