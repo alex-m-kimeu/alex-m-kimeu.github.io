@@ -12,7 +12,7 @@
     --first-color: hsl(var(--hue-color), 100%, 42%);
     --first-color-second: hsl(var(--hue-color), 100%, 55%);
     --first-color-alt: hsl(var(--hue-color), 100%, 61%);
-    --first-color-lighter: hsl(var(--hue-color), 92%, 60%);
+    --first-color-lighter: hsl(var(--hue-color), 100%, 80%);
     --tittle-color: hsl(var(--hue-color), 8%, 10%);
     --text-color: hsl(var(--hue-color), 8%, 35%);
     --text-color-light: hsl(var(--hue-color), 8%, 50%);
@@ -888,6 +888,10 @@ img{
     display: flex;
     align-items: center;
     column-gap: .25rem;
+}
+
+.portfolio_btn:hover{
+    color: var(--first-color-alt);
 }
 
 .portfolio_btn:hover .portfolio_icon{
