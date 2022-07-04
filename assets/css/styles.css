@@ -1024,6 +1024,7 @@ img{
 }
 
 /*====== SCROLL BAR =======*/
+/*
 ::-webkit-scrollbar{
     opacity: 0;
     width: .60rem;
@@ -1038,8 +1039,9 @@ img{
 
 ::-webkit-scrollbar-thumb:hover{
     background-color: var(--text-color-light);
-}
-/* Hide scrollbar for Chrome, Safari and Opera */
+}*/
+/* Hide scrollbar for Chrome, Safari and Opera 
+*/
 ::-webkit-scrollbar {
     display: none;
 }
