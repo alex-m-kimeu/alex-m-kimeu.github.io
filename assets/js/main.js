@@ -1,3 +1,12 @@
+/*====== LOADER ======*/
+onload = () =>{
+    const load = document.getElementById('load')
+
+    setTimeout(() =>{
+        load.style.display = 'none'
+    }, 2500)
+}
+
 /*====== MENU SHOW Y HIDDEN ======*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
