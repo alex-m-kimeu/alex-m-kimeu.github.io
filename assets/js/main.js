@@ -1,5 +1,4 @@
 /*====== LOADER ======*/
-/*
 onload = () =>{
     const load = document.getElementById('load')
 
@@ -7,7 +6,6 @@ onload = () =>{
         load.style.display = 'none'
     }, 2500)
 }
-*/
 /*====== MENU SHOW Y HIDDEN ======*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
@@ -185,3 +183,36 @@ if (selectedTheme) {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
  })
+
+ /*====== SCROLL REVEAL ANIMATION ======*/
+ const sr = ScrollReveal({
+    origin: 'right',
+    distance: '60px',
+    duration: 2500,
+    delay: 250,
+    reset: true
+ })
+ 
+ /* Home */
+ sr.reveal('.home_title, .home_subtitle, .home_img', {delay: 5})
+ sr.reveal('.home_description', {delay: 5})
+ sr.reveal('.home_social, .home_buttons, .home_scroll', {delay: 5, origin: 'left'})
+
+ /* About */
+ sr.reveal('.about_img', {delay: 5, origin: 'left'})
+ sr.reveal('.about_data, .about_buttons', {delay: 1})
+
+ /* Skills */
+ sr.reveal('.skills_right', {delay: 5})
+ sr.reveal('.skills_left', {delay: 5, origin: 'left'})
+
+ /* Resume */
+ sr.reveal('.education, .education-title', {delay: 5, origin: 'left'})
+ sr.reveal('.work, .work-title', {delay: 5})
+
+ /* Portfolio */
+ sr.reveal('.portfolio_container', {delay: 5, origin: 'left'})
+
+ /* Contact */
+ sr.reveal('.contact_information', {delay: 5, origin: 'left'})
+ sr.reveal('.contact_form', {delay: 5})

@@ -18,60 +18,61 @@
 </head>
 <body>
     <!--======= LOADER =======-->
-    <!--
     <div class="load" id="load">
         <img src="assets/img/Loader.gif" alt="" class="load_gif">
     </div>
-    --> 
-    
     <!--======= HEADER =======-->
     <header class="header" id="header">
         <nav class="nav container">
-          <a href="#" class="nav_logo">ALEX</a> 
-          <div class="nav_menu" id="nav-menu">
-            <ul class="nav_list grid">
-                <li class="nav_item">
-                    <a href="#home" class="nav_link active-link">
-                        <i class="uil uil-estate nav_icon"></i> Home
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#about" class="nav_link">
-                        <i class="uil uil-user nav_icon"></i> About
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#skills" class="nav_link">
-                        <i class="uil uil-list-ul nav_icon"></i> Skills
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#services" class="nav_link">
-                        <i class="uil uil-briefcase-alt nav_icon"></i> Services
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#portfolio" class="nav_link">
-                        <i class="uil uil-scenery nav_icon"></i> Portfolio 
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#contact" class="nav_link">
-                        <i class="uil uil-message nav_icon"></i>Contact
-                    </a>
-                </li>
-            </ul>
-            <i class="uil uil-times nav_close" id="nav-close"></i> 
-          </div>
+                <div class="nav_logo">
+                    <a href="#">
+                        <h1><span>A</span>LE<span>X</span></h1>
+                      </a>
+                </div>
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list grid">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link active-link">
+                                <i class="uil uil-estate nav_icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#about" class="nav_link">
+                                <i class="uil uil-user nav_icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#skills" class="nav_link">
+                                <i class="uil uil-list-ul nav_icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#services" class="nav_link">
+                                <i class="uil uil-briefcase-alt nav_icon"></i> Services
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#portfolio" class="nav_link">
+                                <i class="uil uil-scenery nav_icon"></i> Portfolio 
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#contact" class="nav_link">
+                                <i class="uil uil-message nav_icon"></i>Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav_close" id="nav-close"></i> 
+                </div>
 
-          <div class="nav_btns">
-            <!--Theme change button -->
-            <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <div class="nav_btns">
+                    <!--Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-            <div class="nav_toggle" id="nav-toggle">
-                <i class="uil uil-apps"></i>
-            </div>
-          </div>
+                    <div class="nav_toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
         </nav>
     </header>
 
@@ -107,9 +108,11 @@
                             <h1 class="home_title">Hello, I'm Alex</h1>
                             <h3 class="home_subtitle">Full-Stack Web Developer</h3>
                             <p class="home_description">High level experience in web design and development knowledge.<br>Producing quality work.</p>
-                            <a href="#contact" class="button button--flex">
-                                Contact Me <i class="uil uil-message button_icon "></i>
-                            </a>
+                            <div class="home_buttons">
+                                <a href="#contact" class="button button--flex">
+                                    Contact Me <i class="uil uil-message button_icon "></i>
+                                </a>
+                          </div>
                         </div>
                 </div>
                 <div class="home_scroll">
@@ -156,158 +159,157 @@
         <section class="skills section" id="skills">
              <h2 class="section_title">Skills</h2>
              <span class="section_subtitle">My technical level</span>
-             <div class="skills_container container grid">
-                <div>
+            <div class="skills_container container grid">
+                <div class="skills_left">
                  <!--====== SKILLS 1 ======-->
-                 <div class="skills_content skills_open">
-                    <div class="skills_header">
-                        <i class="uil uil-brackets-curly skills_icon"></i>
-                        <div>
-                            <h1 class="skill_title">Frontend Developer</h1>
-                            <span class="skills_subtitle">More than 1.5 years</span>   
+                    <div class="skills_content skills_open">
+                        <div class="skills_header">
+                            <i class="uil uil-brackets-curly skills_icon"></i>
+                            <div>
+                                <h1 class="skill_title">Frontend Developer</h1>
+                                <span class="skills_subtitle">More than 1.5 years</span>   
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>   
                         </div>
-                        <i class="uil uil-angle-down skills_arrow"></i>   
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">HTML</h3>
+                                    <span class="skills_number">90%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_html"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">CSS</h3>
+                                    <span class="skills_number">80%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_css"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">JavaScript</h3>
+                                    <span class="skills_number">50%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_js"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">React</h3>
+                                    <span class="skills_number">60%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_react"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skills_list grid">
-                        <div class="skills_data">
-                            <div class="skills_titles">
-                                <h3 class="skills_name">HTML</h3>
-                                <span class="skills_number">90%</span>
-                            </div>
-                            <div class="skills_bar">
-                                <span class="skills_percentage skills_html"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills_data">
-                            <div class="skills_titles">
-                                <h3 class="skills_name">CSS</h3>
-                                <span class="skills_number">80%</span>
-                            </div>
-                            <div class="skills_bar">
-                                <span class="skills_percentage skills_css"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills_data">
-                            <div class="skills_titles">
-                                <h3 class="skills_name">JavaScript</h3>
-                                <span class="skills_number">50%</span>
-                            </div>
-                            <div class="skills_bar">
-                                <span class="skills_percentage skills_js"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills_data">
-                            <div class="skills_titles">
-                                <h3 class="skills_name">React</h3>
-                                <span class="skills_number">60%</span>
-                            </div>
-                            <div class="skills_bar">
-                                <span class="skills_percentage skills_react"></span>
-                            </div>
-                        </div>
-                    </div>
-                 </div>
                   <!--====== SKILLS 2 ======-->
                   <div class="skills_content skills_close">
-                    <div class="skills_header">
-                        <i class="uil uil-server-network skills_icon"></i>
-                        <div>
-                            <h1 class="skill_title">Backend Developer</h1>
-                            <span class="skills_subtitle">More than 1.5 years</span>   
-                        </div>
-                        <i class="uil uil-angle-down skills_arrow"></i>   
-                    </div>
-                    <div class="skills_list grid">
-                        <div class="skills_data">
-                            <div class="skills_titles">
-                                <h3 class="skills_name">PHP</h3>
-                                <span class="skills_number">60%</span>
+                        <div class="skills_header">
+                            <i class="uil uil-server-network skills_icon"></i>
+                            <div>
+                                <h1 class="skill_title">Backend Developer</h1>
+                                <span class="skills_subtitle">More than 1.5 years</span>   
                             </div>
-                            <div class="skills_bar">
-                                <span class="skills_percentage skills_php"></span>
-                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>   
                         </div>
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">PHP</h3>
+                                    <span class="skills_number">60%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_php"></span>
+                                </div>
+                            </div>
 
-                        <div class="skills_data">
-                            <div class="skills_titles">
-                                <h3 class="skills_name">NODE JS</h3>
-                                <span class="skills_number">70%</span>
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">NODE JS</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_node"></span>
+                                </div>
                             </div>
-                            <div class="skills_bar">
-                                <span class="skills_percentage skills_node"></span>
-                            </div>
-                        </div>
 
-                        <div class="skills_data">
-                            <div class="skills_titles">
-                                <h3 class="skills_name">C/C++</h3>
-                                <span class="skills_number">75%</span>
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">C/C++</h3>
+                                    <span class="skills_number">75%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_c"></span>
+                                </div>
                             </div>
-                            <div class="skills_bar">
-                                <span class="skills_percentage skills_c"></span>
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Python</h3>
+                                    <span class="skills_number">85%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_python"></span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">GIT</h3>
+                                    <span class="skills_number">95%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_git"></span>
+                                </div>
                             </div>
                         </div>
-                        <div class="skills_data">
-                            <div class="skills_titles">
-                                <h3 class="skills_name">Python</h3>
-                                <span class="skills_number">85%</span>
-                            </div>
-                            <div class="skills_bar">
-                                <span class="skills_percentage skills_python"></span>
-                            </div>
-                        </div>
-                        <div class="skills_data">
-                            <div class="skills_titles">
-                                <h3 class="skills_name">GIT</h3>
-                                <span class="skills_number">95%</span>
-                            </div>
-                            <div class="skills_bar">
-                                <span class="skills_percentage skills_git"></span>
-                            </div>
-                        </div>
-                    </div>
                  </div>
                 </div>
-                <div>
+                <div class="skills_right">
                     <!--====== SKILLS 3 ======-->
                   <div class="skills_content skills_close">
-                    <div class="skills_header">
-                        <i class="uil uil-swatchbook skills_icon"></i>
-                        <div>
-                            <h1 class="skill_title">Designer</h1>
-                            <span class="skills_subtitle">More than 1.5 years</span>   
-                        </div>
-                        <i class="uil uil-angle-down skills_arrow"></i>   
-                    </div>
-                    <div class="skills_list grid">
-                        <div class="skills_data">
-                            <div class="skills_titles">
-                                <h3 class="skills_name">AUTOCAD</h3>
-                                <span class="skills_number">70%</span>
+                        <div class="skills_header">
+                            <i class="uil uil-swatchbook skills_icon"></i>
+                            <div>
+                                <h1 class="skill_title">Designer</h1>
+                                <span class="skills_subtitle">More than 1.5 years</span>   
                             </div>
-                            <div class="skills_bar">
-                                <span class="skills_percentage skills_autocad"></span>
-                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>   
                         </div>
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">AUTOCAD</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_autocad"></span>
+                                </div>
+                            </div>
 
-                        <div class="skills_data">
-                            <div class="skills_titles">
-                                <h3 class="skills_name">PHOTOSHOP</h3>
-                                <span class="skills_number">60%</span>
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">PHOTOSHOP</h3>
+                                    <span class="skills_number">60%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_photoshop"></span>
+                                </div>
                             </div>
-                            <div class="skills_bar">
-                                <span class="skills_percentage skills_photoshop"></span>
-                            </div>
-                        </div>
 
-                    </div>
+                        </div>
                  </div>
                 </div>
              </div>
-
         </section>
 
         <!--====== RESUME ======-->
@@ -316,114 +318,123 @@
             <span class="section_subtitle">My personal journey</span>
             <div class="resume_container container">
                 <div class="resume_tabs">
-                    <div class="resume_button button--flex resume active" data-target="#education">
-                        <i class="uil uil-graduation-cap resume_icon"></i>
-                        Education
+                    <div class="education-title">
+                        <div class="resume_button button--flex resume active" data-target="#education">
+                            <i class="uil uil-graduation-cap resume_icon"></i>
+                            Education
+                        </div>
                     </div>
 
-                    <div class="resume_button button--flex" data-target="#work">
-                        <i class="uil uil-briefcase-alt resume_icon"></i>
-                        Work
+                    <div class="work-title">
+                        <div class="resume_button button--flex" data-target="#work">
+                            <i class="uil uil-briefcase-alt resume_icon"></i>
+                            Work
+                        </div>
                     </div>
                 </div>
                 <div class="resume_sections">
-                    <!--====== RESUME CONTENT 1 ======-->
-                    <div class="resume_content resume_active" data-content id="education">
-                        <!--====== UNIVERSITY ======-->
-                        <div class="resume_data">
-                            <div>
-                                <h3 class="resume_title">Electrical and Electronic Engineer</h3>
-                                <span class="resume_subtitle">University Of Nairobi</span>
-                                <div class="resume_calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2018 - Present
+                    <div class="education">
+                        <!--====== RESUME CONTENT 1 ======-->
+                        <div class="resume_content resume_active" data-content id="education">
+                            <!--====== UNIVERSITY ======-->
+                            <div class="resume_data">
+                                <div>
+                                    <h3 class="resume_title">Electrical and Electronic Engineer</h3>
+                                    <span class="resume_subtitle">University Of Nairobi</span>
+                                    <div class="resume_calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2018 - Present
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="resume_rounder"></span>
+                                    <span class="resume_line"></span>
                                 </div>
                             </div>
-                            <div>
-                                <span class="resume_rounder"></span>
-                                <span class="resume_line"></span>
-                            </div>
-                        </div>
 
-                        <!--====== HIGH SCHOOL ======-->
-                        <div class="resume_data">
-                            <div></div>
-                            <div>
-                                <span class="resume_rounder"></span>
-                                <span class="resume_line"></span>
-                            </div>
-                            <div>
-                                <h3 class="resume_title">Kenya Certificate of Secondary Education</h3>
-                                <span class="resume_subtitle">Nairobi - KE</span>
-                                <div class="resume_calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2014 - 2017
+                            <!--====== HIGH SCHOOL ======-->
+                            <div class="resume_data">
+                                <div></div>
+                                <div>
+                                    <span class="resume_rounder"></span>
+                                    <span class="resume_line"></span>
+                                </div>
+                                <div>
+                                    <h3 class="resume_title">Kenya Certificate of Secondary Education</h3>
+                                    <span class="resume_subtitle">Nairobi - KE</span>
+                                    <div class="resume_calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2014 - 2017
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!--====== PRIMARY SCHOOL ======-->
-                        <div class="resume_data">
-                            <div>
-                                <h3 class="resume_title">Kenya Certificate of Primary Education</h3>
-                                <span class="resume_subtitle">Nairobi - KE</span>
-                                <div class="resume_calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2004 - 2013
+                            <!--====== PRIMARY SCHOOL ======-->
+                            <div class="resume_data">
+                                <div>
+                                    <h3 class="resume_title">Kenya Certificate of Primary Education</h3>
+                                    <span class="resume_subtitle">Nairobi - KE</span>
+                                    <div class="resume_calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2004 - 2013
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <span class="resume_rounder"></span>
-                                <!--<span class="resume_line"></span>--> 
+                                <div>
+                                    <span class="resume_rounder"></span>
+                                    <!--<span class="resume_line"></span>--> 
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!--====== RESUME CONTENT 2 ======-->
-                    <div class="resume_content" data-content id="work">
-                        <!--====== WORK ======-->
-                        <div class="resume_data">
-                            <div>
-                                <h3 class="resume_title">Engineer Intern </h3>
-                                <span class="resume_subtitle">Gearbox Kenya</span>
-                                <div class="resume_calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    AUG 2022 - Present
+
+                    <div class="work">
+                        <!--====== RESUME CONTENT 2 ======-->
+                        <div class="resume_content" data-content id="work">
+                            <!--====== WORK ======-->
+                            <div class="resume_data">
+                                <div>
+                                    <h3 class="resume_title">Engineer Intern </h3>
+                                    <span class="resume_subtitle">Gearbox Kenya</span>
+                                    <div class="resume_calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        AUG 2022 - Present
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="resume_rounder"></span>
+                                    <span class="resume_line"></span>
                                 </div>
                             </div>
-                            <div>
-                                <span class="resume_rounder"></span>
-                                <span class="resume_line"></span>
-                            </div>
-                        </div>
-                        <!--====== WORK ======-->
-                        <div class="resume_data">
-                            <div></div>
-                            <div>
-                                <span class="resume_rounder"></span>
-                                <span class="resume_line"></span>
-                            </div>
-                            <div>
-                                <h3 class="resume_title">Freelance Engineer</h3>
-                                <span class="resume_subtitle">Nairobi, KE</span>
-                                <div class="resume_calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2020 - Present
+                            <!--====== WORK ======-->
+                            <div class="resume_data">
+                                <div></div>
+                                <div>
+                                    <span class="resume_rounder"></span>
+                                    <span class="resume_line"></span>
+                                </div>
+                                <div>
+                                    <h3 class="resume_title">Freelance Engineer</h3>
+                                    <span class="resume_subtitle">Nairobi, KE</span>
+                                    <div class="resume_calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2020 - Present
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!--====== WORK ======-->
-                        <div class="resume_data">
-                            <div>
-                                <h3 class="resume_title">Attaché, University of Nairobi</h3>
-                                <span class="resume_subtitle">Nairobi ,KE</span>
-                                <div class="resume_calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2021
+                            <!--====== WORK ======-->
+                            <div class="resume_data">
+                                <div>
+                                    <h3 class="resume_title">Attaché, University of Nairobi</h3>
+                                    <span class="resume_subtitle">Nairobi ,KE</span>
+                                    <div class="resume_calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <span class="resume_rounder"></span>
-                                <!-- <span class="resume_line"></span> -->
+                                <div>
+                                    <span class="resume_rounder"></span>
+                                    <!-- <span class="resume_line"></span> -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -464,7 +475,7 @@
                                 </li>
                                 <li class="services_modal-service">
                                     <i class="uil uil-check-circle services_modal-icon"></i>
-                                    <p>Surface Mount/Through Hole Printed Circuit Boards.</p>
+                                    <p>Through Hole PCBs.</p>
                                 </li>
                             </ul>
                         </div>
@@ -622,7 +633,7 @@
                         </div>
                     </div>
                 </div>
-                <form action="action_page.php" class="contact_form grid">
+                <form method="POST" action="form.php" class="contact_form grid">
                     <div class="contact_inputs grid">
                         <div class="contact_content">
                             <label for="" class="contact_label">Name</label>
@@ -653,7 +664,7 @@
             </div>
 
         </section>
-
+    
 
     </main>
     <!--======FOOTER ======-->
@@ -690,7 +701,7 @@
                 </div>
             </div>
             <p class="footer_copy">&#169:
-                Alexkim. All right reserved
+                Alexkimeu. All right reserved
             </p>
         </div>
     </footer>
@@ -703,6 +714,9 @@
 
     <!--====== MIXITUP FILTER ======-->
     <script src="assets/js/mixitup.min.js"></script>
+
+    <!--====== SCROLL REVEAL ANIMATION ======-->
+    <script src="assets/js/scrollreveal.min.js"></script>
 
     <!--======= MAIN JS ======-->
     <script src="assets/js/main.js"></script>

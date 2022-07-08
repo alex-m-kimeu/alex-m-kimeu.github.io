@@ -154,6 +154,10 @@ img{
     text-align: center;
 }
 
+.main{
+    overflow: hidden;
+}
+
 
 /*======= LAYOUT =======*/
 
@@ -179,23 +183,25 @@ img{
 
 /*======= NAV =======*/
 .nav{
-    max-width: 968px;
+    max-width: 1275px;
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav_logo,
+.nav_logo h1,
 .nav_toggle{
     color: var(--tittle-color);
     font-weight: var(--font-medium);
 }
 
-.nav_logo:hover{
+.nav_logo h1:hover{
     color: var(--first-color);
-    letter-spacing: 0.5rem;
+}
 
+.nav_logo h1 span {
+	color: #008bd6;
 }
 
 .nav_toggle{
@@ -423,11 +429,11 @@ img{
 
 .home_scroll-button{
     color: var(--first-color);
-    transition: 3s;
+    transition: 0.5s;
 }
 
 .home_scroll-button:hover{
-    transform: translateY(.25rem);
+    transform: translateY(.35rem);
 }
 
 .home_scroll-mouse{
@@ -1047,10 +1053,10 @@ img{
 
 /*====== MEDIA QUERIES =======*/
 /*For small devices*/
-@media screen and (max-width: 350px){
+@media screen and (max-width: 395px){
     .container{
-        margin-left: var(--mb-1);
-        margin-right: var(--mb-1);
+        margin-left: var(--mb-1-5);
+        margin-right: var(--mb-1-5);
     }
     .nav_menu{
         padding: 2rem .25rem 4rem;
