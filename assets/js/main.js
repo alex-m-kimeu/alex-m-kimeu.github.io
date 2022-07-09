@@ -1,4 +1,4 @@
-/*====== LOADER ======
+/*====== LOADER ====== */
 if(document.readyState === "complete") {
     // Fully loaded!
     document.getElementById('Content').style.display = 'block'
@@ -10,17 +10,18 @@ else if(document.readyState === "interactive") {
 else {
     // Loading still in progress.
     // To wait for it to complete, add "DOMContentLoaded" or "load" listeners.
-    document.getElementById('spinner').style.display = 'block'
+    document.getElementById('loader').style.display = 'block'
     window.addEventListener("DOMContentLoaded", () => {
         // DOM ready! Images, frames, and other subresources are still downloading.
-        document.getElementById('spinner').style.display = 'none'
+        document.getElementById('loader').style.display = 'none'
     });
 
     window.addEventListener("load", () => {
         // Fully loaded!
         document.getElementById('Content').style.display = 'block'
     });
-}*/
+}
+/*
 setTimeout(() => {
     document.getElementById('Content').style.display = 'block'
     document.getElementById('loader').style.display = 'none'
@@ -31,6 +32,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.getElementById('loader').style.display = 'block'
     document.getElementById('Content').style.display = 'none'
 });
+*/
 
 /*====== MENU SHOW Y HIDDEN ======*/
 const navMenu = document.getElementById('nav-menu'),
