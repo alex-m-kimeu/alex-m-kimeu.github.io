@@ -1,11 +1,37 @@
-/*====== LOADER ======*/
-onload = () =>{
-    const load = document.getElementById('load')
-
-    setTimeout(() =>{
-        load.style.display = 'none'
-    }, 2500)
+/*====== LOADER ======
+if(document.readyState === "complete") {
+    // Fully loaded!
+    document.getElementById('Content').style.display = 'block'
 }
+else if(document.readyState === "interactive") {
+    // DOM ready! Images, frames, and other subresources are still downloading.
+    document.getElementById('Content').style.display = 'none'
+}
+else {
+    // Loading still in progress.
+    // To wait for it to complete, add "DOMContentLoaded" or "load" listeners.
+    document.getElementById('spinner').style.display = 'block'
+    window.addEventListener("DOMContentLoaded", () => {
+        // DOM ready! Images, frames, and other subresources are still downloading.
+        document.getElementById('spinner').style.display = 'none'
+    });
+
+    window.addEventListener("load", () => {
+        // Fully loaded!
+        document.getElementById('Content').style.display = 'block'
+    });
+}*/
+setTimeout(() => {
+    document.getElementById('Content').style.display = 'block'
+    document.getElementById('loader').style.display = 'none'
+    console.log('Loader')
+}, 5000);
+window.addEventListener("DOMContentLoaded", () => {
+    // DOM ready! Images, frames, and other subresources are still downloading.
+    document.getElementById('loader').style.display = 'block'
+    document.getElementById('Content').style.display = 'none'
+});
+
 /*====== MENU SHOW Y HIDDEN ======*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
@@ -183,36 +209,3 @@ if (selectedTheme) {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
  })
-
- /*====== SCROLL REVEAL ANIMATION ======*/
- const sr = ScrollReveal({
-    origin: 'right',
-    distance: '60px',
-    duration: 2500,
-    delay: 250,
-    reset: true
- })
- 
- /* Home */
- sr.reveal('.home_title, .home_subtitle, .home_img', {delay: 5})
- sr.reveal('.home_description', {delay: 5})
- sr.reveal('.home_social, .home_buttons, .home_scroll', {delay: 5, origin: 'left'})
-
- /* About */
- sr.reveal('.about_img', {delay: 5, origin: 'left'})
- sr.reveal('.about_data, .about_buttons', {delay: 1})
-
- /* Skills */
- sr.reveal('.skills_right', {delay: 5})
- sr.reveal('.skills_left', {delay: 5, origin: 'left'})
-
- /* Resume */
- sr.reveal('.education, .education-title', {delay: 5, origin: 'left'})
- sr.reveal('.work, .work-title', {delay: 5})
-
- /* Portfolio */
- sr.reveal('.portfolio_container', {delay: 5, origin: 'left'})
-
- /* Contact */
- sr.reveal('.contact_information', {delay: 5, origin: 'left'})
- sr.reveal('.contact_form', {delay: 5})
