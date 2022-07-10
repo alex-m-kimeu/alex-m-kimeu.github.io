@@ -29,10 +29,9 @@ setTimeout(() => {
 }, 5000);
 window.addEventListener("DOMContentLoaded", () => {
     // DOM ready! Images, frames, and other subresources are still downloading.
-    document.getElementById('loader').style.display = 'block'
+    document.getElementById('loader').style.display = 'grid'
     document.getElementById('Content').style.display = 'none'
 });
-
 /*====== MENU SHOW Y HIDDEN ======*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
