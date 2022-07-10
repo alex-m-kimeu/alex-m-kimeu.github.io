@@ -456,6 +456,10 @@ img{
     font-size: 1.2rem;
 }
 
+.typing{
+    color: var(--first-color);
+}
+
 /*====== BUTTONS ======*/
 .button{
     display: inline-block;

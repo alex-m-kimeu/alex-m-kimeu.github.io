@@ -63,6 +63,14 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+/*====== TYPED ANIMATION ======*/
+var typed = new Typed('.typing', {
+    strings:['an Engineer', 'a Full-stack Developer', 'a Designer'],
+    typeSpeed:80,
+    BackSpeed:60,
+    loop:true
+})
+
 /*====== SKILLS SELECTION ======*/
 const skillsContent = document.getElementsByClassName('skills_content'),
       skillsHeader = document.querySelectorAll('.skills_header')
