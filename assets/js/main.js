@@ -26,7 +26,7 @@ setTimeout(() => {
     document.getElementById('Content').style.display = 'block'
     document.getElementById('loader').style.display = 'none'
     console.log('Loader')
-}, 5000);
+}, 2500);
 window.addEventListener("DOMContentLoaded", () => {
     // DOM ready! Images, frames, and other subresources are still downloading.
     document.getElementById('loader').style.display = 'grid'
