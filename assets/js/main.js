@@ -21,7 +21,7 @@ else {
         // Fully loaded!
         document.getElementById('Content').style.display = 'block'
     });
-}*/
+}
 
 setTimeout(() => {
     document.getElementById('Content').style.display = 'block'
@@ -33,7 +33,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.getElementById('loader').style.display = 'block'
     document.getElementById('Content').style.display = 'none'
 });
-
+*/
 
 /*====== MENU SHOW Y HIDDEN ======*/
 const navMenu = document.getElementById('nav-menu'),

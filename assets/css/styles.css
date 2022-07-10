@@ -1330,7 +1330,7 @@ img{
     }
 }
 
-/*======= LOADER ======*/
+/*======= LOADER ======
 .spinner {
     width: 100%;
     height: 100%;
@@ -1381,3 +1381,4 @@ img{
       -webkit-transform: rotate(-360deg);
     }
   }
+  */
