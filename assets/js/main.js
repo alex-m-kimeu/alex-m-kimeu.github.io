@@ -1,4 +1,5 @@
 /*====== LOADER ====== */
+/*
 if(document.readyState === "complete") {
     // Fully loaded!
     document.getElementById('Content').style.display = 'block'
@@ -20,8 +21,8 @@ else {
         // Fully loaded!
         document.getElementById('Content').style.display = 'block'
     });
-}
-/*
+}*/
+
 setTimeout(() => {
     document.getElementById('Content').style.display = 'block'
     document.getElementById('loader').style.display = 'none'
@@ -32,7 +33,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.getElementById('loader').style.display = 'block'
     document.getElementById('Content').style.display = 'none'
 });
-*/
+
 
 /*====== MENU SHOW Y HIDDEN ======*/
 const navMenu = document.getElementById('nav-menu'),
