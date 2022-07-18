@@ -627,11 +627,7 @@ img{
 }
 
 .skills_php{
-    width: 60%;
-}
-
-.skills_node{
-    width: 70%;
+    width: 50%;
 }
 
 .skills_c{
@@ -1010,6 +1006,7 @@ img{
 .footer_social{
     color: #fff;
 }
+
 
 /*====== SCROLL UP =======*/
 .scrollup{

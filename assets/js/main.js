@@ -23,7 +23,7 @@ else {
 }
 */
 setTimeout(() => {
-    document.getElementById('Content').style.display = 'block'
+    document.getElementById('Content').style.display = 'grid'
     document.getElementById('loader').style.display = 'none'
     console.log('Loader')
 }, 2500);
@@ -66,7 +66,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 /*====== TYPED ANIMATION ======*/
 var typed = new Typed('.typing', {
     strings:['an Engineer', 'a Full-stack Developer', 'a Designer'],
-    typeSpeed:80,
+    typeSpeed:70,
     BackSpeed:60,
     loop:true
 })
